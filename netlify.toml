@@ -1,0 +1,11 @@
+[build]
+command = "npm run build"
+
+[build.environment]
+NODE_VERSION = "20"
+NPM_VERSION = "10"
+# Set GRAPHQL_URL / WS_GRAPHQL_URL (or NEXT_PUBLIC_SERVER_URL / NEXT_PUBLIC_WS_SERVER_URL)
+# in the Netlify UI / secrets. Do not hardcode API hosts here.
+
+[[plugins]]
+package = "@netlify/plugin-nextjs"
